@@ -1,26 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "VremenaGrotesk";
-    src: url(font/VremenaGrotesk.woff) format('woff');
+    src: url(font/VremenaGroteskBook.woff) format('woff');
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskBookItalic.woff) format('woff');
+    font-style: italic;
 }
 @font-face {
     font-family: "VremenaGrotesk";
     src: url(font/VremenaGroteskBold.woff) format('woff');
     font-weight: bold;
-}
-@font-face {
-    font-family: "VremenaGrotesk";
-    src: url(font/VremenaGroteskBook.woff) format('woff');
-    font-weight: lighter;
-}
-@font-face {
-    font-family: "VremenaGrotesk";
-    src: url(font/VremenaGroteskMedium.woff) format('woff');
-    font-weight: medium;
-}
-@font-face {
-    font-family: "VremenaGrotesk";
-    src: url(font/VremenaGroteskItalic.woff) format('woff');
-    font-style: italic;
 }
 @font-face {
     font-family: "VremenaGrotesk";
@@ -30,9 +24,8 @@
 }
 @font-face {
     font-family: "VremenaGrotesk";
-    src: url(font/VremenaGroteskBookItalic.woff) format('woff');
-    font-weight: lighter;
-    font-style: italic;
+    src: url(font/VremenaGroteskMedium.woff) format('woff');
+    font-weight: medium;
 }
 @font-face {
     font-family: "VremenaGrotesk";
@@ -41,7 +34,11 @@
     font-style: italic;
 }
 
+:root {
+    --red:#9B372C;
+    --green:#173224;
+}
 
-h1 {
+html{
     font-family: VremenaGrotesk;
 }

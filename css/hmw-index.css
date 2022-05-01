@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGrotesk.woff) format('woff');
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskBold.woff) format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskBook.woff) format('woff');
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskMedium.woff) format('woff');
+    font-weight: medium;
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskItalic.woff) format('woff');
+    font-style: italic;
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskBoldItalic.woff) format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskBookItalic.woff) format('woff');
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+    font-family: "VremenaGrotesk";
+    src: url(font/VremenaGroteskMediumItalic.woff) format('woff');
+    font-weight: medium;
+    font-style: italic;
+}
+
+
+h1 {
+    font-family: VremenaGrotesk;
+}

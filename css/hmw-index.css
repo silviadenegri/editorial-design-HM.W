@@ -22,6 +22,9 @@
 
     --border:.06rem solid black;
 
+    --underline-wh: underline solid white .2rem;
+    --underline-bl: underline solid black .2rem; 
+
     font-size: 1vw;
 }
 
@@ -107,7 +110,7 @@ html{
     display: flex;
     justify-content: space-between;
     
-    margin: 0 2vw;
+    margin: 0;
     
     font-size: 3vw;
 }
@@ -118,6 +121,8 @@ summary::marker {
 
 .language {
     display: flex;
+
+    margin-right: 2vw;
 }
 
 .language li a{
@@ -136,6 +141,74 @@ li::marker {
 }
 
 /* menu */
+
+.menu-text>details[open] {
+    background-color: var(--red);
+
+    position: absolute;
+    top:0;
+   
+    width: 100vw;
+    
+    padding-bottom: 3vw;
+}
+
+.menu-text>details[open]>summary {
+    padding-top: 2vh;
+
+    color:white;
+    text-decoration: underline solid white .2rem;
+}
+
+.menu {
+    margin: 2vw 2vw 0 2vw;
+}
+
+.menu-text>details[open] .link>a {
+    font-size: 1vw;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 2vw;
+}
+
+.menu-text>details[open] .link>a:hover {
+    text-decoration: underline;
+}
+
+.menu-text>details[open] li {
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu-text>details[open] a  {
+    font-weight: lighter;
+    font-size: 1.5vw;
+    
+    color: white;
+    text-decoration: none;
+}
+
+.menu-text>details[open] a:hover {
+    text-decoration: underline;
+}
+
+.menu-text>details[open] li {
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 2.5vw;
+    
+    color: white;
+    text-decoration: none;
+    border-bottom: .06rem solid white;
+}
+
+.menu-text>details[open] .uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 /* page title */
 
@@ -197,6 +270,10 @@ h2 {
     width: 35vw;
 }
 
+.highlights-tile:hover h3{
+    text-decoration: underline solid black .2rem;
+}
+
 .highlights-tile .mounth{
     font-size: 2vw;
 }
@@ -249,7 +326,7 @@ h2 {
     position: -webkit-sticky;
     position: sticky;
     top: 5vw;
-    z-index: 1;
+   
 }
 
 /* timeline section timeline */
@@ -342,6 +419,16 @@ h2 {
     text-transform: uppercase;
 }
 
+.action-accordion summary::after {
+    content: url("../img/icon/chevron-down.svg");
+}
+
+.action-accordion>details[open]>summary::after {
+    transform:rotate(180deg);
+
+    transition: transform .5s ease-out;
+}
+
 .action-accordion>hr {
     margin: 0;
 }
@@ -384,3 +471,30 @@ h2 {
     margin-top:2vw;
 }
 
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    margin: 4vw;
+    width: 92vw;
+    border-top: .06vw solid black;
+    border-bottom: .06vw solid black;
+    
+}
+
+footer>a {
+    font-size: 2vw;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+
+    padding: .5vw;
+}
+
+footer>a:hover {
+    text-decoration: underline solid black .2rem;
+}

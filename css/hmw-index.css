@@ -28,6 +28,10 @@
     font-size: 1vw;
 }
 
+body img {
+    filter: grayscale(100%);
+}
+
 html{
     font-family: VremenaGrotesk;
     font-weight: lighter;
@@ -35,6 +39,10 @@ html{
 
 .bold {
     font-weight: bold;
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 /* /////////////// INTRODUCTION //////////////// */
@@ -113,6 +121,11 @@ html{
     margin: 0;
     
     font-size: 3vw;
+}
+
+.menu-text a {
+    color: black;
+    text-decoration: none;
 }
 
 summary::marker {
@@ -270,10 +283,6 @@ h2 {
     width: 35vw;
 }
 
-.highlights-tile:hover h3{
-    text-decoration: underline solid black .2rem;
-}
-
 .highlights-tile .mounth{
     font-size: 2vw;
 }
@@ -283,14 +292,21 @@ h2 {
     height: auto;
 }
 
-.highlights-tile>h3 {
+.highlights-tile>a {
     font-weight: lighter;
     font-size: 2vw;
     line-height: 2.5rem;
-
+    
     text-transform: uppercase;
-
+    
     width: 80%;
+    
+    color: black;
+    text-decoration: none;
+}
+
+.highlights-tile:hover a{
+    text-decoration: underline solid black .2rem;
 }
 
 .date {
@@ -319,7 +335,6 @@ h2 {
     
     text-transform: uppercase;
 
-    /* max-width: 60vw; */
     flex-grow: 3;
     height: 100vh;
 
@@ -492,9 +507,125 @@ footer>a {
     color: black;
     text-transform: uppercase;
 
-    padding: .5vw;
+    padding: .5vw 1vw;
 }
 
 footer>a:hover {
     text-decoration: underline solid black .2rem;
+}
+
+
+/* //////////////////// ARCHIVE & ISSUES ///////////////////////////// */
+body.page-action h1{
+    width: 100vw;
+}
+
+.archive-wrapper .archive {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    
+    width:96vw;
+    margin:4vw 2vw;
+}
+
+.single-action-wrapper .single-action {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    
+    width:96vw;
+    margin:4vw 2vw;
+}
+
+.tile {
+    display: grid;
+    justify-items: center;
+    color: #000;
+    text-decoration: none;
+
+    padding: 2vw;
+}
+
+.tile > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.bg-img {
+    filter: none;
+    opacity: 0;
+    
+    width: 100%;
+    height: auto;
+    
+    filter: grayscale(1);
+}
+
+.code {
+    padding: 2vw;
+    justify-self: start;
+}
+
+.action-ref {
+    padding: 2vw;
+    align-self: end;
+    text-transform: uppercase;
+    color: var(--red);
+    
+    opacity: 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3vw;
+    align-self: center;
+}
+
+.tile:hover .bg-img {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    z-index:-1;
+}
+
+.tile:hover .action-ref {
+    opacity: 1;
+}
+
+.tile:hover .title {
+    opacity: 0;
+}
+
+/* ////////////////////////////////// ARTICLES //////////////////////////////// */
+
+.article-wrapper h1 {
+    text-transform: uppercase;
+}
+
+.article-body {
+    width:96vw;
+
+    margin: 4vw 2vw;
+
+    position: relative;
+
+    display: flex;
+}
+
+p.text-article {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vw;
+
+    height:fit-content;
+    padding: 1vw;
+    
+    line-height: 1.3vw;
+}
+
+img {
+    padding: 1vw;
+
+    width: 60vw;
 }

@@ -45,6 +45,13 @@ h1 {
     text-transform: uppercase;
 }
 
+/* /////////////// MEDIA QUERIES //////////////// */
+
+@media (max-device-width: 812px) {
+
+}
+
+
 /* /////////////// INTRODUCTION //////////////// */
 
 /* stiky text */
@@ -628,4 +635,16 @@ img {
     padding: 1vw;
 
     width: 60vw;
+}
+
+p.text-article a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+
+p.text-article a:hover {
+    text-decoration: underline;
 }

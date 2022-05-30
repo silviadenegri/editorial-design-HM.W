@@ -710,5 +710,6 @@ p.text-article a:hover {
 
     summary::marker {
         display:none;
+        color: transparent;
     }
 }

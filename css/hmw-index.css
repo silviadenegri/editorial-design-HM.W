@@ -698,6 +698,7 @@ p.text-article a:hover {
     /* timeline */
 
 
+    /* action */
 
     .action-accordion summary::after {
         content: url("../img/icon/chevron-down-mobile.svg");
@@ -705,5 +706,9 @@ p.text-article a:hover {
 
     .action-tile-text>p {
         font-size: 2.5vw;
+    }
+
+    summary::marker {
+        display:none;
     }
 }

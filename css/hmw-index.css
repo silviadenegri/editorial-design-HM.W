@@ -708,8 +708,7 @@ p.text-article a:hover {
         font-size: 2.5vw;
     }
 
-    ::marker {
-        display:none;
-        color: transparent;
+   summary::marker {
+      color: rgba(255, 255, 255, 0);
     }
 }

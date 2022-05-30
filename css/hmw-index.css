@@ -704,12 +704,16 @@ p.text-article a:hover {
 
     .hmw-change>h4 {
         height: auto;
+        margin-left: 2vw;
     }
+
+
 
     .goal>p {
         font-size: 2.5vw;
         
         margin-left: 2vw;
+        margin-top: 2vw;
     }
 
     .timeline {
@@ -719,9 +723,9 @@ p.text-article a:hover {
     
         overflow-x: scroll;
     
-        gap: 2vw;
+        gap: 3vw;
     
-        margin-left: 7vw;
+        margin-left: 2vw;
 
         max-width: fit-content;
     }
@@ -751,6 +755,19 @@ p.text-article a:hover {
         display:flex;
     }
 
+    .text-column>p {
+        font-size: 2vw;
+    }
+
+    .text-column>h3 {
+        font-size: 2.5vw;
+    }
+
+    .goal-tile-content>img {
+        height:fit-content;
+
+        margin: 0 2vw;
+    }
 
     /* action */
 
@@ -768,4 +785,9 @@ p.text-article a:hover {
       width: 0;
       height: 0;
     }
+
+    .action-accordion summary {
+        margin: 0;
+    }
+
 }

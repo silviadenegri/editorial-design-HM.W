@@ -697,24 +697,13 @@ p.text-article a:hover {
 
     /* timeline */
 
-    .hmw-change>h4 {
-        top: 11vw;
+
+
+    .action-accordion summary::after {
+        content: url("../img/icon/chevron-down-mobile.svg");
     }
 
-
-    .timeline {
-        position: relative;
-        
-        max-width: 70vw;
-        
-        margin: 2vw auto;
-    }
-
-    .text-column>p {
-        font-size: 2.5vw;
-    }
-
-    .text-column>h3 {
+    .action-tile-text>p {
         font-size: 2.5vw;
     }
 }

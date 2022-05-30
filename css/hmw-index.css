@@ -713,18 +713,21 @@ p.text-article a:hover {
     }
 
     .timeline {
-        width: 300vw;
-
         display: flex;
-
+        flex-direction: row;
+        align-items: flex-start;
+    
         overflow-x: scroll;
-        max-width: fit-content;
-
+    
+        gap: 2vw;
+    
         margin-left: 7vw;
+
+        max-width: fit-content;
     }
 
     .timeline::after {
-        transform: rotate(90deg);
+       display: none;
     }
 
     .goal-tile {
@@ -736,7 +739,7 @@ p.text-article a:hover {
     }
 
     .goal-tile::after {
-        left: -0.5vw;
+        display: none;
     }
 
     .goal-tile-content>img {

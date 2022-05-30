@@ -718,7 +718,7 @@ p.text-article a:hover {
         overflow-x: scroll;
         max-width: fit-content;
 
-        margin-left: 2vw;
+        margin-left: 7vw;
     }
 
     .timeline::after {
@@ -732,6 +732,20 @@ p.text-article a:hover {
     .text-column {
         left:0;
     }
+
+    .goal-tile::after {
+        left: -0.5vw;
+    }
+
+    .goal-tile-content>img {
+        left:0;
+
+    }
+
+    .goal-tile-content {
+        display:flex;
+    }
+
 
     /* action */
 

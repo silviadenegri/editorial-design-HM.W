@@ -708,7 +708,7 @@ p.text-article a:hover {
         font-size: 2.5vw;
     }
 
-    summary::marker {
+    ::marker {
         display:none;
         color: transparent;
     }

@@ -811,6 +811,38 @@ p.text-article a:hover {
 
         font-size: 2.5vw;
 
-        filter:drop-shadow(0 0 0.25rem white)
+        filter:drop-shadow(0 0 0.25rem white);
+    }
+
+    .single-action h3.title {
+        margin-left: 2vw;
+
+        color: var(--red);
+        filter:drop-shadow(0 0 0.25rem white);
+    }
+
+    .single-action p.action-ref {
+        display:none;
+    }
+
+    /* articles */
+
+    img {
+        width: 50vw;
+
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10vw;
+
+        height:fit-content;
+        padding: 1vw;
+    }
+
+    p.text-article {
+        font-size: 3vw;
+
+        line-height: 3.5vw;
+
+        position:relative;
     }
 }

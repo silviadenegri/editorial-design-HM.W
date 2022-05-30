@@ -710,5 +710,8 @@ p.text-article a:hover {
 
    summary::marker {
       color: rgba(255, 255, 255, 0);
+
+      width: 0;
+      height: 0;
     }
 }

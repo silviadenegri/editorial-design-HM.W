@@ -45,12 +45,6 @@ h1 {
     text-transform: uppercase;
 }
 
-/* /////////////// MEDIA QUERIES //////////////// */
-
-@media (max-device-width: 812px) {
-
-}
-
 
 /* /////////////// INTRODUCTION //////////////// */
 
@@ -647,4 +641,80 @@ p.text-article a {
 
 p.text-article a:hover {
     text-decoration: underline;
+}
+
+/* /////////////// MEDIA QUERIES //////////////// */
+
+@media (max-device-width: 812px) and (min-device-width: 320px) 
+{
+    p.introduction-title {
+        font-size: 30vw;
+    }
+    p.introduction-subtitle {
+        font-size: 15vw;
+    }
+    .images>img {
+        width: 90vw;
+    }
+
+    /* homepage */
+
+    .menu-text p  {
+        font-size: 5vw;
+    }
+
+    .language a {
+        font-size: 45px;
+    }
+
+    .menu-text>details[open] a {
+        font-size: 3vw;
+    }
+
+    .menu-text>details[open] li {
+        line-height: 3.5vw;
+    }
+
+    /* highlights */
+
+    .highlights-tile {
+        width: 55vw;
+    }
+
+    .highlights-tile>img {
+        width:55vw;
+        height: auto;
+    }
+
+    .highlights-tile>a {
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+
+    .highlights-tile .date{
+        font-size: 2vw;
+    }
+
+    /* timeline */
+
+    .hmw-change>h4 {
+        top: 11vw;
+    }
+
+
+    .timeline {
+        position: relative;
+        
+        max-width: 70vw;
+        
+        margin: 2vw auto;
+    }
+
+    .text-column>p {
+        font-size: 2.5vw;
+    }
+
+    .text-column>h3 {
+        font-size: 2.5vw;
+    }
 }

@@ -645,7 +645,7 @@ p.text-article a:hover {
 
 /* /////////////// MEDIA QUERIES //////////////// */
 
-@media (max-device-width: 812px) and (min-device-width: 320px) 
+@media only screen and (max-width: 812px)  
 {
     p.introduction-title {
         font-size: 30vw;

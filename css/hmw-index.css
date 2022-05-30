@@ -644,6 +644,18 @@ p.text-article a:hover {
     text-decoration: underline;
 }
 
+/* /////////////// BINDING //////////////// */
+
+.binding {
+    width: 96vw;
+    height: 50vw;
+
+    margin: 7vw 2vw;
+}
+
+
+
+
 /* /////////////// MEDIA QUERIES //////////////// */
 
 @media only screen and (max-width: 812px)  

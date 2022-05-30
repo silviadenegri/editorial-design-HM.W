@@ -274,6 +274,8 @@ h2 {
     flex-direction: row;
     align-items: flex-start;
 
+    overflow-x: scroll;
+
     gap: 2vw;
 
     margin-top: 2vw;

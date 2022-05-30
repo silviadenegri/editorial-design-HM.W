@@ -651,7 +651,76 @@ p.text-article a:hover {
     height: 50vw;
 
     margin: 7vw 2vw;
+
 }
+
+.container {
+    background-color: var(--red);
+
+    padding: 30px;
+	margin: 15px;
+}
+
+
+/* /////////////// SUBSCRIBING FORM //////////////// */
+
+
+.subscription-wrapper {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+
+    color: white;
+}
+
+.panel-container h3 {
+	margin-bottom: 30px;
+	letter-spacing: 0.5px;
+}
+
+input {
+    display: block;
+
+    margin: 2vw 0;
+
+    font-family: VremenaGrotesk;
+
+    width:100%;
+
+    background-color: transparent;
+    border: .1rem solid black;
+    border-radius: 3px;
+    padding: .5vw;
+    
+}
+
+button {
+    font-family: VremenaGrotesk;
+    
+    border-radius: 3px;
+    border: none;
+	display: block;
+	font-size: 1vw;
+    padding: .5vw;
+	width: 100%;
+
+    background-color: black;
+    color: white;
+}
+
+small {
+    color:rgb(209, 209, 209);
+
+    font-size: .7vw;
+
+    display: block;
+    margin: 2vw 0;
+}
+
+
 
 
 

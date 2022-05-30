@@ -276,7 +276,6 @@ h2 {
 
     gap: 2vw;
 
-    overflow-x: scroll;
     margin-top: 2vw;
 }
 
@@ -697,6 +696,42 @@ p.text-article a:hover {
 
     /* timeline */
 
+    .hmw-change {
+        display: inline;
+    }
+
+    .hmw-change>h4 {
+        height: auto;
+    }
+
+    .goal>p {
+        font-size: 2.5vw;
+        
+        margin-left: 2vw;
+    }
+
+    .timeline {
+        width: 300vw;
+
+        display: flex;
+
+        overflow-x: scroll;
+        max-width: fit-content;
+
+        margin-left: 2vw;
+    }
+
+    .timeline::after {
+        transform: rotate(90deg);
+    }
+
+    .goal-tile {
+        width:50vw;
+    }
+    
+    .text-column {
+        left:0;
+    }
 
     /* action */
 

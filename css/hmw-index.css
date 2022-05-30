@@ -790,4 +790,27 @@ p.text-article a:hover {
         margin: 0;
     }
 
+
+    /* archive & issues */
+
+    .archive-wrapper .archive {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .single-action-wrapper .single-action {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .tile .bg-img {
+        opacity: 1;
+        z-index:-1;
+    }
+
+    .tile .action-ref {
+        opacity: 1;
+
+        font-size: 2.5vw;
+
+        filter:drop-shadow(0 0 0.25rem white)
+    }
 }
